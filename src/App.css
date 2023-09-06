@@ -1,3 +1,8 @@
+*{
+  font-family: Cairo,Fallback,sans-serif;
+  font-weight: normal;
+}
+
 .App {
   text-align: center;
 }
