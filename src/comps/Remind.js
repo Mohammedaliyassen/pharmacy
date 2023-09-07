@@ -28,13 +28,18 @@ function Remind() {
                         <span class="input-group-text">V</span>
                 </div>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="price" aria-describedby="basic-addon3" fdprocessedid="51y6m9" placeholder=" السعر" />
-                        <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" id="hours" aria-describedby="basic-addon3" fdprocessedid="51y6m9" placeholder=" عدد الساعات" />
+                    <input type="text" class="form-control" id="days" aria-describedby="basic-addon3" fdprocessedid="51y6m9" placeholder=" عدد الايام" />
+                        {/* <span class="input-group-text">$</span> */}
                 </div>
                 <div class="input-group" >
                     <textarea class="form-control" aria-label="With textarea"></textarea>
                     <span class="input-group-text" >رسالة التذكير</span>
                 </div>
+                <a style={{ backgroundColor: "#212a31 ", width: "152px", textDecoration:'none'}} href="/">
+
+                        <button style={{backgroundColor: "#212a31 ", color:'white',border:'none',textDecoration:' none;'}}> حفظ  </button>{" "}
+                    </a>
             </div>
         </>
     )

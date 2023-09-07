@@ -6,6 +6,8 @@ import AutoSale from './AutoSale.js';
 import NewCustomer from './NewCustomer.js';
 import NewProduct from './NewProduct.js';
 import EditProduct from './EditProduct.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 
 const Sidebar = () => {
@@ -23,37 +25,39 @@ const Sidebar = () => {
     return (
         <>
             <div className="sidebar">
-
                 <div className='btns moveLeft'>
+                    <div className='userInfo'>
+                        <div className='userImg'>
+                            <FontAwesomeIcon icon={faUser} style={{ color: "#4a7693",  width: '100%',height:' 115%;' }}  className='ImgMozaf'/>
+                        </div>
+                        <div className='userName' style={{ color: "#fff", }}>
+                            <h3> موظف رقم 1</h3>
+                        </div>
+                    </div>
                     <button
                         className={activeButton === 'تذكير' ? 'active' : ''}
-                        onClick={() => handleButtonClick('تذكير')}
-                    >
+                        onClick={() => handleButtonClick('تذكير')}>
                         تذكير
                     </button>
                     <button
                         className={activeButton === 'البيع التلقائي' ? 'active' : ''}
-                        onClick={() => handleButtonClick('البيع التلقائي')}
-                    >
+                        onClick={() => handleButtonClick('البيع التلقائي')}>
                         البيع التلقائي
                     </button>
 
                     <button
                         className={activeButton === ' تسجيل عميل جديد' ? 'active' : ''}
-                        onClick={() => handleButtonClick(' تسجيل عميل جديد')}
-                    >
+                        onClick={() => handleButtonClick(' تسجيل عميل جديد')}>
                         تسجيل عميل جديد
                     </button>
                     <button
                         className={activeButton === 'رفع صنف جديد' ? 'active' : ''}
-                        onClick={() => handleButtonClick('رفع صنف جديد')}
-                    >
+                        onClick={() => handleButtonClick('رفع صنف جديد')}>
                         رفع صنف جديد
                     </button>
                     <button
                         className={activeButton === 'تعديل بيانات' ? 'active' : ''}
-                        onClick={() => handleButtonClick('تعديل بيانات')}
-                    >
+                        onClick={() => handleButtonClick('تعديل بيانات')}>
                         تعديل بيانات
                     </button>
 

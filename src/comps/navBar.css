@@ -6,9 +6,9 @@
     border: 5px solid #fff;
 }
 .static-navbar, .sticky-navbar {
-    background-color: #060405e0!important;
-    border-bottom: 1px solid #ec643b;
-    border-top: 1px solid #ec643b;
+    background-color: #212a31!important;
+    border-bottom: 1px solid #399b91;
+    border-top: 1px solid #399b91;
     -webkit-filter: blur(-3px);
     filter: blur(-3px);
     height: 92px;
@@ -25,16 +25,16 @@
     align-items: stretch;
 } */
 .navbar div ul li a:hover {
-    background-color: #ec643b;
+    background-color: #399b91;
     font-weight: bold;
    color: white;
     border-radius: 10px;
 
 }
 .active{
-    background-color: #ec643b;
+    background-color: #399b91;
     font-weight: bold;
-   color: white !important;
+    color: white !important;
     border-radius: 10px;
 }
 .navbar div ul li {
@@ -57,7 +57,7 @@ color: white;
 
 
 #bur{
-    color: #ec643b;
+    color: #399b91;
 }
 
 @media (max-width:990px) {
@@ -65,7 +65,7 @@ color: white;
         width: 15vw;
     }
     .navbar-collapse{
-        background-color: #ec643b;
+        background-color: #399b91;
         border-radius: 20px 0 20px 20px ;
         z-index: 9999;
     }
@@ -89,25 +89,12 @@ color: white;
 
 .sticky-navbar {
     position: sticky;
-    top: 0;
-    left: 0;
-    height: 92px;
-    filter: blur(-3px);
-    background-color: #060405e0 !important;
-    width: 100%;
-    border-top: 1px solid #ec643b;
-    z-index: 1000;
-    border-bottom: 1px solid #ec643b;
+    background-color: #212a31!important;
+
   }
 .static-navbar {
     position: static;
-    height: 92px;
-    filter: blur(-3px);
-    background-color: #060405e0 !important;
-    width: 100%;
-    border-top: 1px solid #ec643b;
-    z-index: 1000;
-    border-bottom: 1px solid #ec643b;
+    background-color: #212a31!important;
   }
   .navbar div ul li {
     margin-right: 15px;
