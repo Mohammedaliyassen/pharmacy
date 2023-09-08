@@ -1,5 +1,5 @@
 .content-btn {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 10%;
@@ -36,6 +36,8 @@ h3.h3-projects {
     min-width: 0;
     position: relative;
     width: 1%;
+    height: 43px !important;
+
     border: 1px solid #212a31;
     border-radius: 5px;
     
@@ -126,13 +128,30 @@ textarea {
     border-radius: 0px 5px 5px  0px;
 }
 .logo-list {
-    /* display: grid; */
+
     flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fill,minmax(360px,1fr));
-    justify-content: center;
-    margin-top: 40px;
-    padding: 40px;
-    direction: rtl;
+  text-align: right;
+    margin-top: -55px;
+    padding: 71px;
+    /* direction: rtl; */
     background-color: #399b91;
     border-radius: 20px;
+}
+label{
+ font-size: 30px;
+    /* padding-top: 90px; */
+    margin-top: 35px;
+    margin-left: 20px;
+}
+input.form-control {
+    margin-top: 20px;
+}
+
+.input-group {
+    align-items: stretch;
+    /* display: flex; */
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem!important;
 }

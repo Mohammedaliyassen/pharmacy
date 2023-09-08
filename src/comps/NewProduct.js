@@ -1,44 +1,68 @@
-import './NewProduct.css'
-function Remind() {
-    return (
-        <>
-            <div className="container">
-                <div className="content-btn">
-                    <a
-                        style={{ color: "white", width: "152px" }}
-                        href="/"
-                    >
-                        {" "}
-
-                        <button style={{}}> حفظ  </button>{" "}
-                    </a>
-                    <h3 className="h3-projects">  اضافة منتج جديد   </h3>
-                </div>
-            </div>
-            <div class="logo-list" >
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="اسم العميل" aria-label="Username" aria-describedby="basic-addon1" fdprocessedid="7ejse8"/>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="رقم العميل" aria-label="Recipient's username" aria-describedby="basic-addon2" fdprocessedid="hkdmn"/>
-
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="productName" aria-describedby="basic-addon3" fdprocessedid="51y6m9" placeholder="اسم العلاج" />
-                        <span class="input-group-text">V</span>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="price" aria-describedby="basic-addon3" fdprocessedid="51y6m9" placeholder=" السعر" />
-                        <span class="input-group-text">$</span>
-                </div>
-                <div class="input-group" >
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                    <span class="input-group-text" >رسالة التذكير</span>
-                </div>
-            </div>
-        </>
-    )
+import "./Remind.css";
+function NewProduct() {
+  return (
+    <>
+      <div className="container">
+        <div className="content-btn">
+          <h3 className="h3-projects">اضافة دواء جديد</h3>
+        </div>
+      </div>
+      <div class="logo-list">
+        <div class="input-group">
+          <label>حدد صورة الدواء</label>
+          <input
+            type="file"
+            class="form-control"
+            placeholder=" "
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            fdprocessedid="7ejse8"
+          />
+        </div>
+        <div class="input-group">
+          <label> اسم الدواء</label>
+          <input
+            className="input"
+            type="text"
+            class="form-control"
+            placeholder=" "
+            aria-label="Recipient's username"
+            aria-describedby="basic-addon2"
+            fdprocessedid="hkdmn"
+          />
+        </div>
+        <div class="input-group">
+          <label> سعر الدواء</label>
+          <input
+            className="input"
+            type="text"
+            class="form-control"
+            placeholder=" "
+            aria-label="Recipient's username"
+            aria-describedby="basic-addon2"
+            fdprocessedid="hkdmn"
+          />
+        </div>
+  
+ 
+        <button
+            style={{
+              backgroundColor: "#212a31 ",
+              color: "white",
+              border: "none",
+              textDecoration: " none;",
+              margin:"auto",
+              width:"300px",
+              marginTop:"70px"
+         
+            }}
+          >
+            {" "}
+             اضافة الدواء{" "}
+          </button>{" "}
+      </div>
+    </>
+  );
 }
 
-
-export default Remind;
+export default NewProduct;

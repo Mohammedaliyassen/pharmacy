@@ -1,20 +1,38 @@
 
 .sidebar {
   display: grid;
-  grid-template-columns: 17% 83%;
+  grid-template-columns: 20% 80%;
   align-items: flex-start;
   direction: rtl;
+  padding-bottom: 80pxb ;
+  }
+  @media (max-width:700px) {
+    .sidebar {
+      display: none;
+    
+      }
   }
   .sidebar .btns{
     background-color: #212a31;
     padding: 17px;
-    min-height: 1000px;
     border: 1px solid #399b91;
     border-top: 1px solid #212a31;
     transform: translateY(-1px);
     padding-top: 30%;
     z-index: 999;
   }
+  
+
+.input-group>.form-control, .input-group>.form-floating, .input-group>.form-select {
+    flex: 1 1 auto;
+    min-width: 0;
+    position: relative;
+    /* width: 1%; */
+    width: 100% !important;
+    height: 53px;
+    border: 1px solid #212a31;
+    border-radius: 5px;
+}
   .sidebar .content{
     text-align: center;
     padding: 0 15%!important;
@@ -31,7 +49,7 @@
     align-items: center;
     width: 100px;
     height: 100px;
-    background: #1d425e;
+    background: #f1f4f5;
     padding: 13px;
     border-radius: 50%;
     overflow: hidden;
@@ -42,27 +60,27 @@
     height:115%;
   }
   button {
-    background-color: #fff;
+    background-color: white;
     border: 1px solid #399b91;
     border: 1px solid var(--secondB);
     border-radius: 10px;
     color: #000;
     cursor: pointer;
     display: block;
-    font-size: 18px;
+    font-size: 25px;
     height: auto;
     margin-bottom: 46px;
-    padding: 8px 1px;
+    padding: 15px 1px;
     transition: .5s;
     width: 100%;
   }
   button:hover{
     background-color: #399b91;
-    color: white
+    
   }
   
   button.active {
-    background-color: #1d425e;
+    background-color: #399b91
   }
   
   .content {

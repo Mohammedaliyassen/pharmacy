@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './SideBar.css'; // استيراد ملف CSS الخاص بتصميم الـ Sidebar
-
+import './SideBar.css'; 
 import Remind from './Remind.js';
 import AutoSale from './AutoSale.js';
 import NewCustomer from './NewCustomer.js';
@@ -37,29 +36,25 @@ const Sidebar = () => {
                     <button
                         className={activeButton === 'تذكير' ? 'active' : ''}
                         onClick={() => handleButtonClick('تذكير')}>
-                        تذكير
+                          صفحة التذكير
                     </button>
                     <button
                         className={activeButton === 'البيع التلقائي' ? 'active' : ''}
                         onClick={() => handleButtonClick('البيع التلقائي')}>
-                        البيع التلقائي
+                      صفحة   البيع التلقائي 
                     </button>
 
                     <button
                         className={activeButton === ' تسجيل عميل جديد' ? 'active' : ''}
                         onClick={() => handleButtonClick(' تسجيل عميل جديد')}>
-                        تسجيل عميل جديد
+                     صفحة   تسجيل عميل جديد
                     </button>
                     <button
                         className={activeButton === 'رفع صنف جديد' ? 'active' : ''}
                         onClick={() => handleButtonClick('رفع صنف جديد')}>
-                        رفع صنف جديد
+                      صفحة  رفع دواء جديد
                     </button>
-                    <button
-                        className={activeButton === 'تعديل بيانات' ? 'active' : ''}
-                        onClick={() => handleButtonClick('تعديل بيانات')}>
-                        تعديل بيانات
-                    </button>
+                  
 
                     <button className='sideBarDrag' onClick={() => {
                         document.querySelector('.btns').classList.toggle('moveRight')
@@ -78,7 +73,7 @@ const Sidebar = () => {
                     {activeButton === 'البيع التلقائي' && <AutoSale />}
                     {activeButton === ' تسجيل عميل جديد' && <NewCustomer />}
                     {activeButton === 'رفع صنف جديد' && <NewProduct />}
-                    {activeButton === 'تعديل بيانات' && <EditProduct />}
+               
                 </div>
 
             </div>

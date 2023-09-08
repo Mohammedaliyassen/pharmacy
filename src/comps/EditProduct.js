@@ -10,7 +10,7 @@ function Remind() {
                     >
                         {" "}
 
-                        <button style={{}}> حفظ  </button>{" "}
+                        {/* <button style={{}}> حفظ  </button>{" "} */}
                     </a>
                     <h3 className="h3-projects">  تعديل منتج  </h3>
                 </div>

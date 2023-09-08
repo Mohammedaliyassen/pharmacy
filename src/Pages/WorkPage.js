@@ -6,7 +6,7 @@ function WorkPage() {
     return (
       <>
         
-          <NavBar />
+          {/* <NavBar /> */}
           <Sidebar/>
             
    
